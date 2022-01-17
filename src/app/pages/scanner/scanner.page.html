@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Scanner de code barre!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  {{barcodeResult | json}}
+  <ion-fab horizontal="center" vertical="bottom">
+    <ion-fab-button (click)="onScan()">
+      <ion-icon name="barcode"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{(product)?product.product_name : "Chargement en cours..."}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="product">
+    <ion-card-header>
+      <ion-title>{{code}}</ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img [src]="product.image_url"></ion-img>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
